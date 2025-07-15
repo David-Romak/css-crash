@@ -1,36 +1,20 @@
-.nav-list {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: blue;
-  width: 50px;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 50px;
+.container{
+  display:flex;
+  align-items: stretch;
+  background:orangered;
+  padding:20px;
+  gap:20px;
 }
 
-.item {
-  display: flex;
-  overflow: visible;
-  position: relative;
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1); 
 }
 
-.item span {
-  width: 0;
-  opacity: 0;
-  overflow: hidden;
-  margin-left: 10px;
-  transition: all 0.3s ease-in-out;
-
-  position: absolute;
-  left: 30px;
-}
-
-.item:hover {
-  transform: scale(1.3);
-}
-
-.item:hover span {
-  opacity: 1;
-  width: auto;
+.card:hover{
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  transform:translateY(-2px);
+  flex: 1;
 }
